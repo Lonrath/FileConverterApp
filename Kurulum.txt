@@ -1,0 +1,20 @@
+## 🚀 Kurulum
+### 1️⃣ Gerekli Kütüphaneleri Yükleyin
+```bash
+pip install -r requirements.txt
+```
+### 2️⃣ Uygulamayı Başlatın
+```bash
+python -m uvicorn app:app --reload
+```
+
+## 🛠 API Endpoint'leri
+| Method | Endpoint | Açıklama |
+|--------|-------------|--------------------------------|
+| `POST` | `/api/convert/word` | PDF → Word dönüşümü |
+| `POST` | `/api/convert/json` | PDF → JSON dönüşümü |
+| `POST` | `/api/convert/image` | PDF → Görsel (jpg/png) dönüşümü |
+| `POST` | `/api/convert/excel` | PDF → Excel dönüşümü |
+
+## 🛠 Örnek Kullanım
+Postman veya herhangi bir HTTP istemcisi ile yukarıdaki endpoint'lere PDF dosyaları göndererek test edebilirsiniz.
